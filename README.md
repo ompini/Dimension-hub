@@ -14,19 +14,13 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 ```
 
-Node Installation
-
-Node Name
-
-Your Node Name
-Port prefix
-
-205
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf dymension
 git clone https://github.com/dymensionxyz/dymension
 cd dymension
 git checkout v3.1.0
+```
 
 # Build binary
 make install
