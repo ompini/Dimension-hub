@@ -22,8 +22,10 @@ cd dymension
 git checkout v3.1.0
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.dymension/cosmovisor/genesis/bin
