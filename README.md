@@ -27,10 +27,12 @@ git checkout v3.1.0
 make install
 ```
 
-# Prepare cosmovisor directories
+**Prepare cosmovisor directories**
+```
 mkdir -p $HOME/.dymension/cosmovisor/genesis/bin
 sudo ln -s $HOME/.dymension/cosmovisor/genesis $HOME/.dymension/cosmovisor/current -f
 sudo ln -s $HOME/.dymension/cosmovisor/current/bin/dymd /usr/local/bin/dymd -f
+```
 
 # Move binary to cosmovisor directory
 mv $(which dymd) $HOME/.dymension/cosmovisor/genesis/bin
