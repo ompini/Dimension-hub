@@ -34,8 +34,10 @@ sudo ln -s $HOME/.dymension/cosmovisor/genesis $HOME/.dymension/cosmovisor/curre
 sudo ln -s $HOME/.dymension/cosmovisor/current/bin/dymd /usr/local/bin/dymd -f
 ```
 
-# Move binary to cosmovisor directory
+**Move binary to cosmovisor directory**
+```
 mv $(which dymd) $HOME/.dymension/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 dymd config chain-id dymension_1100-1
