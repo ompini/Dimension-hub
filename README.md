@@ -39,10 +39,12 @@ sudo ln -s $HOME/.dymension/cosmovisor/current/bin/dymd /usr/local/bin/dymd -f
 mv $(which dymd) $HOME/.dymension/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 dymd config chain-id dymension_1100-1
 dymd config keyring-backend file
 dymd config node tcp://localhost:20557
+```
 
 # Initialize the node
 dymd init "Your Node Name" --chain-id dymension_1100-1
