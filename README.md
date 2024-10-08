@@ -46,8 +46,10 @@ dymd config keyring-backend file
 dymd config node tcp://localhost:20557
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 dymd init "Your Node Name" --chain-id dymension_1100-1
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/dymension/genesis.json > $HOME/.dymension/config/genesis.json
