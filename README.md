@@ -62,8 +62,10 @@ curl -L https://snapshots.nodejumper.io/dymension/addrbook.json > $HOME/.dymensi
 sed -i -e 's|^seeds *=.*|seeds = "45bffa41836302b06310af67f012500cc0d1da31@rpc.dymension.nodestake.org:666,ebc272824924ea1a27ea3183dd0b9ba713494f83@dymension-mainnet-seed.autostake.com:27086,20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:20556,400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@dymension.rpc.kjnodes.com:14659,193262e32a9d7d3fffe14073160cabc4cdfef26b@dymension-rpc.stakeandrelax.net:20556,8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656,c28827cb96c14c905b127b92065a3fb4cd77d7f6@seeds.whispernode.com:20556,10ed1e176d874c8bb3c7c065685d2da6a4b86475@seed-dymension.ibs.team:16676,86bd5cb6e762f673f1706e5889e039d5406b4b90@seed.dymension.node75.org:10956,258f523c96efde50d5fe0a9faeea8a3e83be22ca@seed.mainnet.dymension.aviaone.com:10290"|' $HOME/.dymension/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "5000000000adym"|' $HOME/.dymension/config/app.toml
+```
 
 # Set pruning
 sed -i \
