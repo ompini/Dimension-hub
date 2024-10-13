@@ -67,12 +67,14 @@ sed -i -e 's|^seeds *=.*|seeds = "45bffa41836302b06310af67f012500cc0d1da31@rpc.d
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "5000000000adym"|' $HOME/.dymension/config/app.toml
 ```
 
-# Set pruning
+**Set pruning**
+```
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.dymension/config/app.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:20517%; s%:8080%:20580%; s%:9090%:20590%; s%:9091%:20591%; s%:8545%:20545%; s%:8546%:20546%; s%:6065%:20565%" $HOME/.dymension/config/app.toml
