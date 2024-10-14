@@ -76,9 +76,11 @@ sed -i \
   $HOME/.dymension/config/app.toml
 ```
 
-# Change ports
+**Change ports**
+```
 sed -i -e "s%:1317%:20517%; s%:8080%:20580%; s%:9090%:20590%; s%:9091%:20591%; s%:8545%:20545%; s%:8546%:20546%; s%:6065%:20565%" $HOME/.dymension/config/app.toml
 sed -i -e "s%:26658%:20558%; s%:26657%:20557%; s%:6060%:20560%; s%:26656%:20556%; s%:26660%:20561%" $HOME/.dymension/config/config.toml
+```
 
 # Download latest chain data snapshot
 curl "https://snapshots.nodejumper.io/dymension/dymension_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.dymension"
