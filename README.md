@@ -87,8 +87,10 @@ sed -i -e "s%:26658%:20558%; s%:26657%:20557%; s%:6060%:20560%; s%:26656%:20556%
 curl "https://snapshots.nodejumper.io/dymension/dymension_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.dymension"
 ```
 
-# Install Cosmovisor
+**Install Cosmovisor**
+```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.6.0
+```
 
 # Create a service
 sudo tee /etc/systemd/system/dymension.service > /dev/null << EOF
