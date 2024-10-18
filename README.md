@@ -92,7 +92,8 @@ curl "https://snapshots.nodejumper.io/dymension/dymension_latest.tar.lz4" | lz4 
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.6.0
 ```
 
-# Create a service
+**Create a service**
+```
 sudo tee /etc/systemd/system/dymension.service > /dev/null << EOF
 [Unit]
 Description=Dymension Hub node service
@@ -113,6 +114,7 @@ WantedBy=multi-user.target
 EOF
 sudo systemctl daemon-reload
 sudo systemctl enable dymension.service
+```
 
 # Start the service and check the logs
 sudo systemctl start dymension.service
