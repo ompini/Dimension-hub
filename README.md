@@ -54,7 +54,7 @@ dymd init "Your Node Name" --chain-id dymension_1100-1
 **Download genesis and addrbook files**
 ```
 curl -L https://snapshots.nodejumper.io/dymension/genesis.json > $HOME/.dymension/config/genesis.json
-curl -L https://snapshots.nodejumper.io/dymension/addrbook.json > $HOME/.dymension/config/addrbook.json
+curl -L https://raw.githubusercontent.com/ompini/Dimension-hub/refs/heads/main/addrbook.json > $HOME/.dymension/config/addrbook.json
 ```
 
 **Set seeds**
